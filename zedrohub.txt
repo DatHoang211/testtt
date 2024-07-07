@@ -5,19 +5,19 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 local Window = Fluent:CreateWindow({
     --ai skid thì nhớ đổi tên =)
     --táo hub , aniee hub :>
-    Title = "Zedro Test Hub",
-    SubTitle = "Version 3",
+    Title = "W-azu",
+    SubTitle = "Version True",
     TabWidth = 160,
-    Size = UDim2.fromOffset(530, 350),
+    Size = UDim2.fromOffset(400, 230),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Red",
+    Theme = "white",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main Farm", Icon = "home" }),
-    Setting = Window:AddTab({ Title = "Setting Farming", Icon = "settings" }),
+    Main = Window:AddTab({ Title = "Main Farm", Icon = "settings" }),
+    Setting = Window:AddTab({ Title = "Setting Farming", Icon = "home" }),
     Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "baby" }),
+    Player = Window:AddTab({ Title = "Player", Icon = "apple" }),
     Teleport = Window:AddTab({ Title = "Travel", Icon = "palmtree" }),
     Fruit = Window:AddTab({ Title = "Devil Fruit", Icon = "cherry" }),
     Raid = Window:AddTab({ Title = "Raid", Icon = "swords" }),
@@ -29,12 +29,6 @@ local Tabs = {
 local Options = Fluent.Options
 do
 --------------------------------------------------------------------------------------------------------------------------------------------
-getgenv().Team = "Marines" -- Marines Pirates
-getgenv().AutoLoad = false --Will Load Script On Server Hop
-getgenv().SlowLoadUi  = false
-getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
-getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
-getgenv().ForceUseSilentAim = false --Force turn on silent aim , if error then executor problem
 function AntiBan()
     for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
         if v:IsA("LocalScript") then
